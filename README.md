@@ -14,4 +14,7 @@ If you haven't installed http-server already, install it by following instructio
 npm install http-server -g
 ```
 
+## Version history
 
+- 1.0.1 small design fix
+- 1.0.0 First release
