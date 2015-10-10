@@ -16,6 +16,7 @@ npm install http-server -g
 
 ## Version history
 
+- 1.0.3 Do not display empty messages
 - 1.0.2 Clear input after submitting and sanitize input
 - 1.0.1 More mobile friendly
 - 1.0.0 First release

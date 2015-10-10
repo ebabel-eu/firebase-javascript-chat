@@ -7,12 +7,17 @@ function sanitizeString (str){
 
 ref.on("child_added", function (snapshot) {
     var value = snapshot.val();
+    var name = sanitizeString(value.name);
+    var text = sanitizeString(value.text);
 
-    $('.chat-log').append('<li><strong>' + 
-        sanitizeString(value.name) + 
-        '</strong>: ' + 
-        sanitizeString(value.text) + 
-        '</li>');
+    if (name && text) {
+        $('.chat-log').append('<li><strong>' + 
+            name + 
+            '</strong>: ' + 
+            text + 
+            '</li>');
+    }
+
 });
 
 $('input[type=button]').on('click', function (event) {
@@ -20,8 +25,8 @@ $('input[type=button]').on('click', function (event) {
     var $text = $('textarea');
 
     ref.push({
-        name: $name.val(),
-        text: $text.val()
+        name: sanitizeString($name.val()) || 'Anonymous',
+        text: sanitizeString($text.val())
     });
 
     $name.val('');
