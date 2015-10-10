@@ -1,0 +1,22 @@
+{
+  "name": "firebase-javascript-chat",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ebabel-eu/firebase-javascript-chat",
+  "authors": [
+    "nadjibamar <hello@ebabel.eu>"
+  ],
+  "description": "Test web app to build a chat with Firebase.",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "~2.3.1",
+    "jquery": "~2.1.4"
+  }
+}
