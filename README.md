@@ -16,5 +16,5 @@ npm install http-server -g
 
 ## Version history
 
-- 1.0.1 small design fix
+- 1.0.1 More mobile friendly
 - 1.0.0 First release
